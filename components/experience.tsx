@@ -35,38 +35,60 @@ const experiences = [
 export function Experience() {
   return (
     <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">Experience</h2>
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-              <div className="space-y-4">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                  <div>
-                    <h3 className="text-xl font-semibold">{exp.title}</h3>
-                    <a
-                      href={exp.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-accent hover:underline inline-flex items-center gap-1"
-                    >
-                      {exp.company}
-                      <ExternalLink className="h-3 w-3" />
-                    </a>
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Professional Experience</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Building impactful solutions across diverse industries and technologies
+          </p>
+        </div>
+        
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent/20 via-accent/40 to-accent/20 hidden lg:block"></div>
+          
+          <div className="space-y-12">
+            {experiences.map((exp, index) => (
+              <div key={index} className="relative flex items-start gap-8">
+                {/* Timeline dot */}
+                <div className="hidden lg:flex items-center justify-center w-16 h-16 bg-background border-4 border-accent/20 rounded-full z-10 flex-shrink-0">
+                  <div className="w-3 h-3 bg-accent rounded-full"></div>
+                </div>
+                
+                <Card className="flex-1 p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent/20 hover:border-l-accent">
+                  <div className="space-y-6">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
+                        <a
+                          href={exp.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-accent hover:text-accent/80 transition-colors inline-flex items-center gap-2 text-lg font-medium"
+                        >
+                          {exp.company}
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </div>
+                      <div className="bg-accent/10 px-4 py-2 rounded-full">
+                        <span className="text-sm font-medium text-accent">{exp.period}</span>
+                      </div>
+                    </div>
+                    
+                    <p className="text-muted-foreground leading-relaxed text-lg">{exp.description}</p>
+                    
+                    <div className="flex flex-wrap gap-3">
+                      {exp.technologies.map((tech) => (
+                        <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
-                  <span className="text-sm text-muted-foreground whitespace-nowrap">{exp.period}</span>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
+                </Card>
               </div>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
