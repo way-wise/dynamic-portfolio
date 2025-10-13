@@ -130,7 +130,7 @@ export function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-gray-800 hover:text-gray-900 transition-colors"
+                  className="text-sm text-gray-300 hover:text-gray-100 transition-colors"
                 >
                   {item.label}
                 </a>

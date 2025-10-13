@@ -53,11 +53,11 @@ export function Hero() {
                     "Mobile App Developer",
                     "Cloud Architect"
                   ]}
-                  className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent"
+                  className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent"
                 />
               </h2>
               
-              <p className="text-lg sm:text-xl text-gray-800 max-w-2xl mx-auto lg:mx-0 text-balance leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+              <p className="text-lg sm:text-xl text-gray-100 max-w-2xl mx-auto lg:mx-0 text-balance leading-relaxed" data-aos="fade-up" data-aos-delay="400">
                 Seasoned Full-Stack Developer and AI/ML Specialist with 12+ years of experience delivering cutting-edge digital solutions across web, mobile, and AI-driven platforms.
               </p>
             </div>
