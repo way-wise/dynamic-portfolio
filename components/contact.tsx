@@ -32,10 +32,10 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-purple-50">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to bring your ideas to life? Let's start a conversation
           </p>
@@ -44,101 +44,101 @@ export function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Let's work together</h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">
+              <h3 className="text-2xl font-bold mb-6 text-black">Let's work together</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
                 I'm always interested in hearing about new projects and opportunities. Whether you have a question or
                 just want to say hi, feel free to reach out! I typically respond within 24 hours.
               </p>
             </div>
 
             <div className="space-y-6">
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-blue-200 border-blue-300">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-accent/10 rounded-xl">
                     <Mail className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground font-medium">Email</p>
-                    <a href="mailto:hello@example.com" className="text-lg font-semibold hover:text-accent transition-colors">
+                    <p className="text-sm text-gray-700 font-medium">Email</p>
+                    <a href="mailto:hello@example.com" className="text-lg font-semibold text-black hover:text-blue-500 transition-colors">
                       hello@example.com
                     </a>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-purple-200 border-purple-300">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-accent/10 rounded-xl">
                     <Phone className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground font-medium">Phone</p>
-                    <a href="tel:+1234567890" className="text-lg font-semibold hover:text-accent transition-colors">
+                    <p className="text-sm text-gray-700 font-medium">Phone</p>
+                    <a href="tel:+1234567890" className="text-lg font-semibold text-black hover:text-purple-500 transition-colors">
                       +1 (234) 567-890
                     </a>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow bg-violet-200 border-violet-300">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-accent/10 rounded-xl">
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground font-medium">Location</p>
-                    <p className="text-lg font-semibold">San Francisco, CA</p>
+                    <p className="text-sm text-gray-700 font-medium">Location</p>
+                    <p className="text-lg font-semibold text-black">San Francisco, CA</p>
                   </div>
                 </div>
               </Card>
             </div>
           </div>
 
-          <Card className="p-8 shadow-xl">
+           <Card className="p-8 shadow-xl bg-white border-gray-200">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-sm font-medium">Name</Label>
+                <Label htmlFor="name" className="text-sm font-medium text-gray-700">Name</Label>
                 <Input 
                   id="name" 
                   name="name" 
                   placeholder="Your name" 
                   required 
-                  className="h-12"
+                  className="h-12 !bg-gray-100 !border-gray-300 !text-gray-900"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+                <Label htmlFor="email" className="text-sm font-medium text-gray-700">Email</Label>
                 <Input 
                   id="email" 
                   name="email" 
                   type="email" 
                   placeholder="your@email.com" 
                   required 
-                  className="h-12"
+                  className="h-12 !bg-gray-100 !border-gray-300 !text-gray-900"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="subject" className="text-sm font-medium">Subject</Label>
+                <Label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</Label>
                 <Input 
                   id="subject" 
                   name="subject" 
                   placeholder="What's this about?" 
                   required 
-                  className="h-12"
+                  className="h-12 !bg-gray-100 !border-gray-300 !text-gray-900"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium">Message</Label>
+                <Label htmlFor="message" className="text-sm font-medium text-gray-700">Message</Label>
                 <Textarea 
                   id="message" 
                   name="message" 
                   placeholder="Your message..." 
                   rows={6} 
                   required 
-                  className="resize-none"
+                  className="resize-none !bg-gray-100 !border-gray-300 !text-gray-900"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export function Contact() {
           </Card>
         </div>
 
-        <footer className="mt-24 pt-12 border-t border-border">
+        <footer className="mt-24 pt-12 border-t border-gray-300">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-6">
               <a href="https://github.com/way-wise" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
@@ -162,7 +162,7 @@ export function Contact() {
                 <MapPin className="h-5 w-5" />
               </a>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-700">
               © {new Date().getFullYear()} Firoz Bari's Portfolio. Built with Next.js and Tailwind CSS.
             </p>
           </div>

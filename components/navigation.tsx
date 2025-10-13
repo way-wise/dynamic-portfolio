@@ -60,8 +60,7 @@ export function Navigation() {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center gap-2">
-              <img src="/logo.svg" alt="Firoz Bari" className="h-8 w-8" />
-              <span className="text-xl font-bold text-primary">Firoz Bari</span>
+              <span className="text-xl font-bold text-primary font-mono">&lt;Firoz Bari /&gt;</span>
             </div>
             <Button
               variant="ghost"
@@ -80,7 +79,7 @@ export function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`block py-4 px-4 text-lg text-muted-foreground hover:text-foreground hover:bg-accent/10 rounded-lg transition-all duration-200 transform ${
+                  className={`block py-4 px-4 text-lg text-gray-300 hover:text-gray-100 hover:bg-accent/10 rounded-lg transition-all duration-200 transform ${
                     isMobileMenuOpen 
                       ? 'translate-x-0 opacity-100' 
                       : '-translate-x-4 opacity-0'
@@ -122,8 +121,7 @@ export function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <img src="/logo.svg" alt="Firoz Bari" className="h-8 w-8" />
-              <span className="text-xl font-bold text-primary">Firoz Bari</span>
+              <span className="text-xl font-bold text-primary font-mono">&lt;Firoz Bari /&gt;</span>
             </a>
 
             {/* Desktop Navigation */}
@@ -132,35 +130,15 @@ export function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm text-gray-300 hover:text-gray-100 transition-colors"
                 >
                   {item.label}
                 </a>
               ))}
-              {mounted && (
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  aria-label="Toggle theme"
-                >
-                  {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-                </Button>
-              )}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-2">
-              {mounted && (
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  aria-label="Toggle theme"
-                >
-                  {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-                </Button>
-              )}
               <Button
                 variant="ghost"
                 size="icon"

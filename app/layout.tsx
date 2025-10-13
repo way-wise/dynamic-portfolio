@@ -5,8 +5,10 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
+import { AOSProvider } from "@/components/aos-provider"
 import { Suspense } from "react"
 import "./globals.css"
+import "aos/dist/aos.css"
 
 export const metadata: Metadata = {
   title: "Firoz Bari | Full-Stack Developer & AI/ML Specialist",
@@ -24,8 +26,10 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
-            {children}
-            <Toaster />
+            <AOSProvider>
+              {children}
+              <Toaster />
+            </AOSProvider>
           </ThemeProvider>
         </Suspense>
         <Analytics />

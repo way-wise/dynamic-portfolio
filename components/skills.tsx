@@ -36,23 +36,23 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-green-50">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">Skills & Technologies</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">Skills & Technologies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => {
             const Icon = category.icon
             return (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+              <Card key={index} className="p-6 shadow-none hover:shadow-lg transition-shadow bg-white border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-accent/10 rounded-lg">
                     <Icon className="h-5 w-5 text-accent" />
                   </div>
-                  <h3 className="text-xl font-semibold">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-black">{category.title}</h3>
                 </div>
                 <ul className="space-y-2">
                   {category.skills.map((skill) => (
-                    <li key={skill} className="text-muted-foreground">
+                    <li key={skill} className="text-gray-700">
                       • {skill}
                     </li>
                   ))}

@@ -34,11 +34,28 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Professional Experience</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section id="experience" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-blue-50 overflow-hidden">
+      {/* Elegant Background Shapes */}
+      <div className="absolute inset-0 -z-10">
+        {/* Floating geometric shapes */}
+        <div className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-2xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-10 w-24 h-24 bg-gradient-to-r from-green-500/5 to-blue-500/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-20 right-1/4 w-40 h-40 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        
+        {/* Small floating elements */}
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-blue-400/20 rotate-45 animate-bounce" style={{animationDelay: '0.5s'}}></div>
+        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-purple-400/20 rotate-12 animate-bounce" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-green-400/20 rotate-45 animate-bounce" style={{animationDelay: '2.5s'}}></div>
+        
+        {/* Subtle lines */}
+        <div className="absolute top-1/4 right-1/4 w-px h-20 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-16 h-px bg-gradient-to-r from-transparent via-purple-400/10 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
+      </div>
+
+      <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Professional Experience</h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Building impactful solutions across diverse industries and technologies
           </p>
         </div>
@@ -49,17 +66,17 @@ export function Experience() {
           
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-start gap-8">
+              <div key={index} className="relative flex items-start gap-8" data-aos="fade-up" data-aos-delay={`${index * 100}`}>
                 {/* Timeline dot */}
                 <div className="hidden lg:flex items-center justify-center w-16 h-16 bg-background border-4 border-accent/20 rounded-full z-10 flex-shrink-0">
                   <div className="w-3 h-3 bg-accent rounded-full"></div>
                 </div>
                 
-                <Card className="flex-1 p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent/20 hover:border-l-accent">
+                <Card className="flex-1 p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent/20 hover:border-l-accent hover:scale-[1.02] bg-white border-gray-50">
                   <div className="space-y-6">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                       <div>
-                        <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-black">{exp.title}</h3>
                         <a
                           href={exp.link}
                           target="_blank"
@@ -78,11 +95,26 @@ export function Experience() {
                     <p className="text-muted-foreground leading-relaxed text-lg">{exp.description}</p>
                     
                     <div className="flex flex-wrap gap-3">
-                      {exp.technologies.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="px-3 py-1 text-sm">
-                          {tech}
-                        </Badge>
-                      ))}
+                      {exp.technologies.map((tech, techIndex) => {
+                        const colors = [
+                          'bg-blue-100 text-blue-800 border-blue-200',
+                          'bg-green-100 text-green-800 border-green-200',
+                          'bg-purple-100 text-purple-800 border-purple-200',
+                          'bg-pink-100 text-pink-800 border-pink-200',
+                          'bg-yellow-100 text-yellow-800 border-yellow-200',
+                          'bg-red-100 text-red-800 border-red-200',
+                          'bg-indigo-100 text-indigo-800 border-indigo-200',
+                          'bg-teal-100 text-teal-800 border-teal-200',
+                          'bg-orange-100 text-orange-800 border-orange-200',
+                          'bg-cyan-100 text-cyan-800 border-cyan-200'
+                        ]
+                        const colorClass = colors[techIndex % colors.length]
+                        return (
+                          <Badge key={tech} className={`px-3 py-1 text-sm ${colorClass}`}>
+                            {tech}
+                          </Badge>
+                        )
+                      })}
                     </div>
                   </div>
                 </Card>
