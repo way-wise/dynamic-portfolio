@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ExternalLink, Github, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { Navigation } from '@/components/navigation'
 
 interface Project {
   id: string
@@ -45,7 +46,8 @@ export default async function ProjectPage({ params }: { params: { id: string } }
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
+      <Navigation />
+      <div className="container mx-auto px-4 py-8 pt-24">
         <div className="mb-8">
           <Link href="/#projects">
             <Button variant="outline" className="mb-4">

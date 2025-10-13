@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { toast } from 'sonner'
+import { Navigation } from '@/components/navigation'
 
 export default function Login() {
   const [isLoading, setIsLoading] = useState(false)
@@ -44,8 +45,10 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background px-4">
-      <Card className="w-full max-w-md">
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <div className="flex items-center justify-center px-4 pt-24">
+        <Card className="w-full max-w-md">
         <div className="p-6">
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold">Portfolio Admin</h1>
@@ -89,6 +92,7 @@ export default function Login() {
           </div>
         </div>
       </Card>
+      </div>
     </div>
   )
 }
