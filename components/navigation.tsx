@@ -26,19 +26,19 @@ export function Navigation() {
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" },
-    { label: "Dashboard", href: "/login" },
   ]
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border ${
         isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold font-mono">
-            {"<dev />"}
+          <a href="#" className="flex items-center gap-2">
+            <img src="/logo.svg" alt="Firoz Bari" className="h-8 w-8" />
+            <span className="text-xl font-bold text-primary">Firoz Bari</span>
           </a>
 
           {/* Desktop Navigation */}

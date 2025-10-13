@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 border-b border-border">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
@@ -18,17 +18,16 @@ export function Hero() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
-                  Rakib
+                  Firoz Bari
                 </span>
               </h1>
               
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-muted-foreground">
-                Full-Stack Developer
+                Full-Stack Developer & AI/ML Specialist
               </h2>
               
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 text-balance leading-relaxed">
-                Building accessible, pixel-perfect digital experiences for the web. 
-                Passionate about creating modern applications that make a difference.
+                Seasoned Full-Stack Developer and AI/ML Specialist with 12+ years of experience delivering cutting-edge digital solutions across web, mobile, and AI-driven platforms.
               </p>
             </div>
 
@@ -82,8 +81,8 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/5 rounded-full blur-3xl scale-110"></div>
               <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl">
                 <Image
-                  src="/placeholder-user.jpg"
-                  alt="Rakib - Full-Stack Developer"
+                  src="/firoz_bari.svg"
+                  alt="Firoz Bari - Full-Stack Developer & AI/ML Specialist"
                   fill
                   className="object-cover"
                   priority

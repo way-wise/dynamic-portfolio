@@ -9,8 +9,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio | Full-Stack Engineer",
-  description: "Full-stack developer portfolio showcasing projects, skills, and experience in modern web development",
+  title: "Firoz Bari | Full-Stack Developer & AI/ML Specialist",
+  description: "Full-stack developer and AI/ML specialist with 12+ years of experience delivering cutting-edge digital solutions across web, mobile, and AI-driven platforms.",
   generator: "v0.app",
 }
 
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
             {children}
             <Toaster />
           </ThemeProvider>
