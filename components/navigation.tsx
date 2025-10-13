@@ -60,7 +60,7 @@ export function Navigation() {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center gap-2">
-              <span className="text-xl font-bold text-primary font-mono">&lt;Firoz Bari /&gt;</span>
+              <span className="text-xl font-bold text-white font-mono">&lt;Firoz Bari /&gt;</span>
             </div>
             <Button
               variant="ghost"
@@ -121,7 +121,7 @@ export function Navigation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-primary font-mono">&lt;Firoz Bari /&gt;</span>
+              <span className="text-xl font-bold text-white font-mono">&lt;Firoz Bari /&gt;</span>
             </a>
 
             {/* Desktop Navigation */}

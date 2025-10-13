@@ -34,7 +34,7 @@ export function Hero() {
                 Available for new opportunities
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance" data-aos="fade-up" data-aos-delay="200">
+              <h1 className="text-4xl text-white sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance" data-aos="fade-up" data-aos-delay="200">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
                   Firoz Bari
@@ -77,22 +77,22 @@ export function Hero() {
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-4" data-aos="fade-up" data-aos-delay="600">
-              <Button variant="ghost" size="icon" asChild className="hover:bg-accent/10 hover:text-accent transition-colors">
+              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild className="hover:bg-accent/10 hover:text-accent transition-colors">
+              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild className="hover:bg-accent/10 hover:text-accent transition-colors">
+              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild className="hover:bg-accent/10 hover:text-accent transition-colors">
+              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
                 <a href="mailto:hello@example.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>
