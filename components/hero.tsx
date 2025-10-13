@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 border-b border-border overflow-hidden bg-[#090b0f]">
       {/* Elegant Background Shapes */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-10">
         {/* Large floating circles */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -29,8 +29,8 @@ export function Hero() {
           {/* Left Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 text-red-600 text-sm font-medium" data-aos="fade-up" data-aos-delay="100">
-                <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/50 text-purple-500 text-sm font-medium" data-aos="fade-up" data-aos-delay="100">
+                <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
                 Available for new opportunities
               </div>
               
