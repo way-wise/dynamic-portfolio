@@ -10,19 +10,19 @@ export function Hero() {
           {/* Left Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium">
-                <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 text-red-600 text-sm font-medium">
+                <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse"></div>
                 Available for new opportunities
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
                   Firoz Bari
                 </span>
               </h1>
               
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-muted-foreground">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800">
                 Full-Stack Developer & AI/ML Specialist
               </h2>
               
@@ -43,12 +43,12 @@ export function Hero() {
                   Get In Touch
                 </a>
               </Button>
-              <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
+              {/* <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
                 <a href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
@@ -78,8 +78,8 @@ export function Hero() {
           {/* Right Column - Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/5 rounded-full blur-3xl scale-110"></div>
-              <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-accent/20 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-purple-5/5 rounded-full blur-3xl scale-110"></div>
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-purple-600/20 shadow-2xl">
                 <Image
                   src="/firoz_bari.svg"
                   alt="Firoz Bari - Full-Stack Developer & AI/ML Specialist"
@@ -88,10 +88,10 @@ export function Hero() {
                   priority
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-accent/20">
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-600/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-purple-600/20">
                 <div className="text-2xl">💻</div>
               </div>
-              <div className="absolute -top-4 -left-4 w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-accent/20">
+              <div className="absolute -top-4 -left-4 w-20 h-20 bg-purple-600/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-purple-600/20">
                 <div className="text-xl">🚀</div>
               </div>
             </div>

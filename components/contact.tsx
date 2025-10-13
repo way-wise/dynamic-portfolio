@@ -152,10 +152,10 @@ export function Contact() {
         <footer className="mt-24 pt-12 border-t border-border">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+              <a href="https://github.com/way-wise" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+              <a href="tel:+1 (310) 528-6170" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
                 <Phone className="h-5 w-5" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
@@ -163,7 +163,7 @@ export function Contact() {
               </a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Rakib's Portfolio. Built with Next.js and Tailwind CSS.
+              © {new Date().getFullYear()} Firoz Bari's Portfolio. Built with Next.js and Tailwind CSS.
             </p>
           </div>
         </footer>
