@@ -53,7 +53,7 @@ export function Navigation() {
       )}
       
       {/* Mobile Drawer */}
-      <div className={`fixed top-0 left-0 h-full w-80 bg-background border-r border-border z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+      <div className={`fixed bg-[#090b0f] top-0 left-0 h-full w-80 border-r border-border z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
         isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
@@ -115,7 +115,7 @@ export function Navigation() {
       {/* Main Navigation Bar */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border ${
-          isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
+          isScrolled ? "bg-[#090b0f]/80 backdrop-blur-md border-b border-border" : "bg-transparent"
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
