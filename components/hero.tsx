@@ -78,7 +78,7 @@ export function Hero() {
 
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-4" data-aos="fade-up" data-aos-delay="600">
               <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/way-wise" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
@@ -88,12 +88,7 @@ export function Hero() {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="mailto:hello@example.com" aria-label="Email">
+                <a href="mailto:firoz@waywise.pro" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
