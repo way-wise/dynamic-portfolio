@@ -1,11 +1,127 @@
-import { NextRequest, NextResponse } from 'next/server'
+// Static data for projects and categories
+// This file contains all the project and category data that can be easily managed
 
-// NOTE: This API route is no longer used since we moved to static data
-// The projects data is now managed in lib/data.ts
-// Keeping this file for reference or future database integration
+export interface Project {
+  id: string
+  title: string
+  description: string
+  image?: string
+  technologies: string
+  github?: string
+  demo?: string
+  featured: boolean
+  published: boolean
+  categoryId: string
+  createdAt: string
+  updatedAt: string
+}
 
-// Mock data for projects (until database is set up)
-const mockProjects = [
+export interface Category {
+  id: string
+  name: string
+  description: string
+  color: string
+  icon: string
+  createdAt: string
+  updatedAt: string
+}
+
+// Categories data
+export const categories: Category[] = [
+  {
+    id: '1',
+    name: 'Frontend',
+    description: 'User interface and client-side development',
+    color: '#3B82F6', // Blue
+    icon: '🎨',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '2',
+    name: 'Backend',
+    description: 'Server-side development and APIs',
+    color: '#10B981', // Green
+    icon: '⚙️',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '3',
+    name: 'Full-Stack',
+    description: 'Complete web applications with frontend and backend',
+    color: '#8B5CF6', // Purple
+    icon: '🚀',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '4',
+    name: 'Mobile',
+    description: 'Mobile application development',
+    color: '#F59E0B', // Orange
+    icon: '📱',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '5',
+    name: 'API',
+    description: 'Application Programming Interfaces and integrations',
+    color: '#EF4444', // Red
+    icon: '🔌',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '6',
+    name: 'No-Code',
+    description: 'Platform-based solutions without traditional coding',
+    color: '#06B6D4', // Cyan
+    icon: '🛠️',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '7',
+    name: 'AI/ML',
+    description: 'Artificial Intelligence and Machine Learning projects',
+    color: '#EC4899', // Pink
+    icon: '🤖',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '8',
+    name: 'Blockchain',
+    description: 'Decentralized applications and Web3 projects',
+    color: '#84CC16', // Lime
+    icon: '⛓️',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '9',
+    name: 'DevOps',
+    description: 'Development operations and infrastructure',
+    color: '#6B7280', // Gray
+    icon: '🔧',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  },
+  {
+    id: '10',
+    name: 'Data Science',
+    description: 'Data analysis, visualization, and insights',
+    color: '#8B5CF6', // Purple
+    icon: '📊',
+    createdAt: '2024-01-01T00:00:00Z',
+    updatedAt: '2024-01-01T00:00:00Z',
+  }
+]
+
+// Projects data
+export const projects: Project[] = [
   {
     id: '1',
     title: 'E-commerce Platform',
@@ -232,44 +348,19 @@ const mockProjects = [
   }
 ]
 
-export async function GET() {
-  try {
-    console.log('Fetching projects (mock data)...')
-    // Return mock data for now
-    return NextResponse.json(mockProjects)
-  } catch (error) {
-    console.error('Error fetching projects:', error)
-    return NextResponse.json({ error: 'Failed to fetch projects' }, { status: 500 })
-  }
+// Helper functions to get data
+export const getProjects = (): Project[] => {
+  return projects.filter(project => project.published)
 }
 
-export async function POST(request: NextRequest) {
-  try {
-    const body = await request.json()
-    const { title, description, image, technologies, github, demo, featured, published, categoryId } = body
+export const getCategories = (): Category[] => {
+  return categories
+}
 
-    // Create a new project with mock data
-    const newProject = {
-      id: Date.now().toString(),
-        title,
-        description,
-      image: image || '/placeholder.svg',
-        technologies,
-        github,
-        demo,
-        featured: featured || false,
-        published: published || false,
-      categoryId: categoryId || '1', // Default to Frontend
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    }
+export const getProjectById = (id: string): Project | undefined => {
+  return projects.find(project => project.id === id)
+}
 
-    // Add to mock data (in memory only)
-    mockProjects.unshift(newProject)
-
-    return NextResponse.json(newProject)
-  } catch (error) {
-    console.error('Error creating project:', error)
-    return NextResponse.json({ error: 'Failed to create project' }, { status: 500 })
-  }
+export const getCategoryById = (id: string): Category | undefined => {
+  return categories.find(category => category.id === id)
 }

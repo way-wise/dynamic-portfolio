@@ -1,81 +1,21 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
+import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Eye, Filter, Search } from "lucide-react"
-
-interface Project {
-  id: string
-  title: string
-  description: string
-  image?: string
-  technologies: string
-  github?: string
-  demo?: string
-  featured: boolean
-  published: boolean
-  categoryId: string
-  createdAt: string
-  updatedAt: string
-}
-
-interface Category {
-  id: string
-  name: string
-  description: string
-  color: string
-  icon: string
-}
+import { ExternalLink, Github, Filter, Search } from "lucide-react"
+import { projects, categories, Project, Category } from "@/lib/data"
 
 export function Projects() {
-  const [projects, setProjects] = useState<Project[]>([])
-  const [categories, setCategories] = useState<Category[]>([])
-  const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [searchTerm, setSearchTerm] = useState('')
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [projectsResponse, categoriesResponse] = await Promise.all([
-          fetch('/api/projects'),
-          fetch('/api/categories')
-        ])
-        
-        const projectsData = await projectsResponse.json()
-        const categoriesData = await categoriesResponse.json()
-        
-        // Check if the response is an array, otherwise set empty array
-        if (Array.isArray(projectsData)) {
-          setProjects(projectsData)
-        } else {
-          console.error('API returned non-array data:', projectsData)
-          setProjects([])
-        }
-
-        if (Array.isArray(categoriesData)) {
-          setCategories(categoriesData)
-        } else {
-          console.error('Categories API returned non-array data:', categoriesData)
-          setCategories([])
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error)
-        setProjects([])
-        setCategories([])
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchData()
-  }, [])
+  // Get published projects from static data
+  const publishedProjects = projects.filter(project => project.published)
 
   // Filter projects based on category and search
-  const filteredProjects = projects.filter(project => {
+  const filteredProjects = publishedProjects.filter(project => {
     const matchesCategory = selectedCategory === 'all' || project.categoryId === selectedCategory
     const matchesSearch = searchTerm === '' || 
       project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -87,32 +27,6 @@ export function Projects() {
 
   const getCategoryInfo = (categoryId: string) => {
     return categories.find(cat => cat.id === categoryId) || { name: 'Unknown', color: '#6B7280', icon: '📁' }
-  }
-
-  if (loading) {
-    return (
-      <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[...Array(4)].map((_, index) => (
-              <Card key={index} className="overflow-hidden bg-white border-gray-200">
-                <div className="aspect-video bg-muted animate-pulse" />
-                <div className="p-6 space-y-4">
-                  <div className="h-6 bg-muted animate-pulse rounded" />
-                  <div className="h-4 bg-muted animate-pulse rounded" />
-                  <div className="h-4 bg-muted animate-pulse rounded w-3/4" />
-                  <div className="flex gap-2">
-                    <div className="h-6 w-16 bg-muted animate-pulse rounded" />
-                    <div className="h-6 w-20 bg-muted animate-pulse rounded" />
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
   }
 
   return (
@@ -213,12 +127,6 @@ export function Projects() {
                       })}
                     </div>
                   <div className="flex gap-3 pt-2">
-                    <Button variant="outline" size="sm" asChild className="!bg-black !text-white">
-                      <Link href={`/projects/${project.id}`}>
-                        <Eye className="mr-2 h-4 w-4" />
-                        View Details
-                      </Link>
-                    </Button>
                     {project.github && (
                       <Button variant="outline" size="sm" asChild className="!bg-transparent !text-black">
                         <a href={project.github} target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+// NOTE: This API route is no longer used since we moved to static data
+// The categories data is now managed in lib/data.ts
+// Keeping this file for reference or future database integration
+
 // Mock data for categories
 const mockCategories = [
   {
