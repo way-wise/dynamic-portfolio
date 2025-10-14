@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -79,11 +80,17 @@ export function Projects() {
             const categoryInfo = getCategoryInfo(project.categoryId)
             return (
               <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-shadow bg-white border-gray-200" data-aos="fade-up" data-aos-delay="100">
-                <div className="aspect-video relative overflow-hidden bg-muted">
-                  <img
+                <div className="aspect-[4/3] relative overflow-hidden bg-muted">
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-contain hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={95}
+                    priority={false}
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                   />
                   <div className="absolute top-2 right-2 flex gap-1">
                     {project.featured && (
@@ -101,7 +108,7 @@ export function Projects() {
                     </Badge>
                   </div>
                 </div>
-                <div className="p-6 space-y-4">
+                <div className="px-6 space-y-4">
                   <h3 className="text-2xl font-semibold text-black">{project.title}</h3>
                   <p className="text-gray-700 leading-relaxed line-clamp-3">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
