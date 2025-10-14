@@ -5,29 +5,29 @@ import { ExternalLink } from "lucide-react"
 const experiences = [
   {
     period: "2024 — Present",
-    title: "Senior Full-Stack Engineer",
-    company: "TechCorp",
-    link: "https://techcorp.com",
+    title: "CEO & Founder of Way-Wise Tech",
+    company: "Way-Wise Tech",
+    link: "https://waywisetech.com",
     description:
-      "Build and maintain critical components used to construct the frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
-    technologies: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL"],
+      "I founded Way-Wise Tech in 2024 to provide cutting-edge technology solutions to businesses and individuals. We specialize in building custom software applications, websites, and mobile apps to help businesses grow and succeed.",
+    technologies: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Laravel", "Python", "AI/ML"],
   },
   {
-    period: "2022 — 2024",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    link: "https://startupxyz.com",
+    period: "2020 — 2024",
+    title: "Sr. Full-Stack Developer",
+    company: "Livez Solutions",
+    link: "#",
     description:
       "Developed and shipped highly interactive web applications for both internal and external stakeholders. Collaborated with designers to implement pixel-perfect UI components and worked on backend APIs to support frontend features.",
     technologies: ["JavaScript", "React", "Express", "MongoDB", "AWS"],
   },
   {
-    period: "2020 — 2022",
-    title: "Frontend Developer",
-    company: "Digital Agency",
-    link: "https://digitalagency.com",
+    period: "2012 — 2019",
+    title: "Full-Stack Developer",
+    company: "Freelancer",
+    link: "#",
     description:
-      "Built responsive websites and web applications for various clients across different industries. Focused on creating accessible, performant, and visually appealing user interfaces.",
+      "I was a freelancer for various clients across different industries. I built responsive websites and web applications for various clients across different industries. Focused on creating accessible, performant, and visually appealing user interfaces.",
     technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Tailwind CSS"],
   },
 ]
