@@ -4,12 +4,15 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     setMounted(true)
@@ -35,11 +38,11 @@ export function Navigation() {
   }, [isMobileMenuOpen])
 
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Skills", href: "#skills" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/about" },
+    { label: "Experience", href: "/experience" },
+    { label: "Projects", href: "/#projects" },
+    { label: "Skills", href: "/skills" },
+    { label: "Contact", href: "/#contact" },
   ]
 
   return (
@@ -59,9 +62,9 @@ export function Navigation() {
         <div className="flex flex-col h-full">
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
-            <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-bold text-white font-mono">&lt;Firoz Bari /&gt;</span>
-            </div>
+            </Link>
             <Button
               variant="ghost"
               size="icon"
@@ -75,23 +78,29 @@ export function Navigation() {
           {/* Drawer Navigation */}
           <div className="flex-1 p-6">
             <nav className="space-y-2">
-              {navItems.map((item, index) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`block py-4 px-4 text-lg text-gray-300 hover:text-gray-100 hover:bg-accent/10 rounded-lg transition-all duration-200 transform ${
-                    isMobileMenuOpen 
-                      ? 'translate-x-0 opacity-100' 
-                      : '-translate-x-4 opacity-0'
-                  }`}
-                  style={{
-                    transitionDelay: isMobileMenuOpen ? `${index * 100}ms` : '0ms'
-                  }}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item, index) => {
+                const isPageRoute = item.href.startsWith('/')
+                const LinkComponent = isPageRoute ? Link : 'a'
+                const linkProps = isPageRoute ? { href: item.href } : { href: item.href }
+                
+                return (
+                  <LinkComponent
+                    key={item.href}
+                    {...linkProps}
+                    className={`block py-4 px-4 text-lg text-gray-300 hover:text-gray-100 hover:bg-accent/10 rounded-lg transition-all duration-200 transform ${
+                      isMobileMenuOpen 
+                        ? 'translate-x-0 opacity-100' 
+                        : '-translate-x-4 opacity-0'
+                    }`}
+                    style={{
+                      transitionDelay: isMobileMenuOpen ? `${index * 100}ms` : '0ms'
+                    }}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </LinkComponent>
+                )
+              })}
             </nav>
           </div>
 
@@ -115,26 +124,34 @@ export function Navigation() {
       {/* Main Navigation Bar */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border ${
-          isScrolled ? "bg-[#090b0f]/80 backdrop-blur-md border-b border-border" : "bg-transparent"
+          pathname === '/' 
+            ? (isScrolled ? "bg-[#090b0f]/80 backdrop-blur-md border-b border-border" : "bg-transparent")
+            : "bg-[#090b0f]/80 backdrop-blur-md border-b border-border"
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <a href="#" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-bold text-white font-mono">&lt;Firoz Bari /&gt;</span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-sm text-gray-300 hover:text-gray-100 transition-colors"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isPageRoute = item.href.startsWith('/')
+                const LinkComponent = isPageRoute ? Link : 'a'
+                const linkProps = isPageRoute ? { href: item.href } : { href: item.href }
+                
+                return (
+                  <LinkComponent
+                    key={item.href}
+                    {...linkProps}
+                    className="text-sm text-gray-300 hover:text-gray-100 transition-colors"
+                  >
+                    {item.label}
+                  </LinkComponent>
+                )
+              })}
             </div>
 
             {/* Mobile Menu Button */}
