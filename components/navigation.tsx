@@ -123,10 +123,10 @@ export function Navigation() {
 
       {/* Main Navigation Bar */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-[#1f2227] ${
           pathname === '/' 
-            ? (isScrolled ? "bg-[#090b0f]/80 backdrop-blur-md border-b border-border" : "bg-transparent")
-            : "bg-[#090b0f]/80 backdrop-blur-md border-b border-border"
+            ? (isScrolled ? "bg-[#090b0f]/80 backdrop-blur-md border-b border-[#1f2227]" : "bg-transparent")
+            : "bg-[#090b0f]/80 backdrop-blur-md border-b border-[#1f2227]"
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
