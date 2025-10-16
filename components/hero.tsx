@@ -114,17 +114,17 @@ export function Hero() {
                   </p>
                   
                   <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                    <Button variant="outline" size="sm" asChild className="text-white bg-transparent border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
                       <a href="/about">
                         About Me
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                    <Button variant="outline" size="sm" asChild className="text-white bg-transparent border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
                       <a href="/experience">
                         Experience
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                    <Button variant="outline" size="sm" asChild className="text-white bg-transparent border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
                       <a href="/skills">
                         Skills
                       </a>
