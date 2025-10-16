@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Code2, Database, Layout, Server, Smartphone, Wrench } from "lucide-react"
+import { Code2, Database, Layout, Server, Smartphone, Wrench, CheckCheck } from "lucide-react"
 
 const skillCategories = [
   {
@@ -52,8 +52,9 @@ export function Skills() {
                 </div>
                 <ul className="space-y-2">
                   {category.skills.map((skill) => (
-                    <li key={skill} className="text-gray-700">
-                      • {skill}
+                    <li key={skill} className="text-gray-700 flex items-center gap-2">
+                      <CheckCheck className="h-4 w-4 text-green-500 flex-shrink-0" />
+                      {skill}
                     </li>
                   ))}
                 </ul>
