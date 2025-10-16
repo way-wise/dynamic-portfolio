@@ -32,7 +32,7 @@ export default function RootLayout({
             </AOSProvider>
           </ThemeProvider>
         </Suspense>
-        <Analytics />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
