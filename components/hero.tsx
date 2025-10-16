@@ -5,7 +5,7 @@ import { TypingAnimation } from "@/components/typing-animation"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen py-12 flex items-center justify-center px-4 sm:px-6 lg:px-8 border-b border-border overflow-hidden bg-[#090b0f]">
+    <section className="relative min-h-screen pt-20 pb-12 flex items-center justify-center px-4 sm:px-6 lg:px-8 border-b border-border overflow-hidden bg-[#090b0f] z-0">
       {/* Elegant Background Shapes */}
       <div className="absolute inset-0 z-10">
         {/* Large floating circles */}

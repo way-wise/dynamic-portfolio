@@ -56,7 +56,7 @@ export function Navigation() {
       )}
       
       {/* Mobile Drawer */}
-      <div className={`fixed bg-[#090b0f] top-0 left-0 h-full w-80 border-r border-border z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+      <div className={`fixed bg-black top-0 left-0 h-full w-80 border-r border-border z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
         isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
@@ -103,21 +103,6 @@ export function Navigation() {
               })}
             </nav>
           </div>
-
-          {/* Drawer Footer */}
-          <div className="p-6 border-t border-border">
-            {mounted && (
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                aria-label="Toggle theme"
-              >
-                {theme === "dark" ? <Sun className="mr-2 h-4 w-4" /> : <Moon className="mr-2 h-4 w-4" />}
-                {theme === "dark" ? "Light Mode" : "Dark Mode"}
-              </Button>
-            )}
-          </div>
         </div>
       </div>
 
@@ -161,7 +146,7 @@ export function Navigation() {
                 size="icon"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label="Toggle menu"
-                className="transition-transform duration-200"
+                className="transition-transform duration-200 text-white hover:text-white"
               >
                 <div className="relative w-5 h-5">
                   <Menu className={`absolute inset-0 h-5 w-5 transition-all duration-200 ${
