@@ -93,6 +93,46 @@ export function Hero() {
                 </a>
               </Button>
             </div>
+
+            {/* Learn More About Me Section - Highlighted Box */}
+            <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
+              <div className="relative p-6 rounded-2xl bg-gradient-to-r from-purple-500/10 via-purple-600/5 to-purple-500/10 border border-purple-500/30 backdrop-blur-sm">
+                {/* Decorative elements */}
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-400/50 to-transparent"></div>
+                <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-purple-400/50 to-transparent"></div>
+                <div className="absolute top-2 left-2 w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <div className="absolute bottom-2 right-2 w-2 h-2 bg-white rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                
+                <div className="relative">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
+                    <h3 className="text-2xl font-semibold text-white">Learn More About Me</h3>
+                  </div>
+                  
+                  <p className="text-lg text-gray-100 mb-6 text-center lg:text-left">
+                    Explore my journey, experience, and technical expertise:
+                  </p>
+                  
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                      <a href="/about">
+                        About Me
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                      <a href="/experience">
+                        Experience
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild className="text-white border-purple-500/50 hover:bg-purple-500/20 hover:border-purple-400 hover:text-white transition-all backdrop-blur-sm">
+                      <a href="/skills">
+                        Skills
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Image */}
