@@ -337,7 +337,7 @@ export const projects: Project[] = [
     title: 'Healthcare Mobile App',
     description: 'Healthcare mobile application for telemedicine consultations, appointment booking, and health record management. Features include video calls and prescription management.',
     image: '/uploads/mobile/app-6.png',
-    technologies: 'React Native, Node.js, PostgreSQL, HIPAA Compliance',
+    technologies: 'React Native, PostgreSQL, HIPAA Compliance',
     github: 'https://github.com/way-wise/healthcare-mobile-app',
     demo: '',
     featured: false,
@@ -367,7 +367,7 @@ export const projects: Project[] = [
     title: 'Travel Planning Mobile App',
     description: 'Travel planning mobile application with itinerary management, booking integration, and offline maps. Features include expense tracking and travel recommendations.',
     image: '/uploads/mobile/app-8.png',
-    technologies: 'React Native, Node.js, MongoDB, Google Maps API, Offline Maps',
+    technologies: 'React Native, Node.js, MongoDB, Offline Maps',
     github: 'https://github.com/way-wise/travel-planning-mobile-app',
     demo: '',
     featured: false,
@@ -375,6 +375,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-05-05T00:00:00Z',
     updatedAt: '2024-05-05T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a travel planning mobile app for his business',
   },
   {
     id: '25',
@@ -389,6 +390,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-05-10T00:00:00Z',
     updatedAt: '2024-05-10T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a task management mobile app for his business',
   },
 
   // No-Code/Shopify Projects
@@ -405,13 +407,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-05-15T00:00:00Z',
     updatedAt: '2024-05-15T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a e-commerce platform for his business',
   },
   {
     id: '27',
     title: 'Fashion Shopify Store',
     description: 'Modern fashion e-commerce store built on Shopify with custom design, size guides, and virtual try-on features. Includes advanced inventory management and customer reviews.',
     image: '/uploads/shopify-2.jpg',
-    technologies: 'Shopify, Liquid, CSS3, Shopify Apps, Mailchimp, Google Analytics',
+    technologies: 'Shopify, Liquid, CSS3, Mailchimp, Google Analytics',
     github: 'https://github.com/way-wise/fashion-shopify-store',
     demo: '',
     featured: false,
@@ -419,13 +422,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-05-20T00:00:00Z',
     updatedAt: '2024-05-20T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a fashion e-commerce platform for his business',
   },
   {
     id: '28',
     title: 'Electronics Shopify Store',
     description: 'Electronics e-commerce store with advanced product filtering, technical specifications, and warranty management. Features include bulk ordering and technical support integration.',
     image: '/uploads/shopify-3.jpg',
-    technologies: 'Shopify, Liquid, JavaScript, Custom Apps, Zendesk, Inventory Management',
+    technologies: 'Shopify, Liquid, JavaScript, Custom Apps',
     github: 'https://github.com/way-wise/electronics-shopify-store',
     demo: '',
     featured: false,
@@ -433,13 +437,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-05-25T00:00:00Z',
     updatedAt: '2024-05-25T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a electronics e-commerce platform for his business',
   },
   {
     id: '29',
     title: 'Home & Garden Shopify Store',
     description: 'Home and garden e-commerce store with visual product configurators, room planning tools, and installation guides. Features include AR visualization and project calculators.',
     image: '/uploads/shopify-4.jpg',
-    technologies: 'Shopify, Liquid, AR.js, Custom Apps, Project Management Tools',
+    technologies: 'Shopify, Liquid, AR.js, Project Management Tools',
     github: 'https://github.com/way-wise/home-garden-shopify-store',
     demo: '',
     featured: false,
@@ -447,13 +452,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-01T00:00:00Z',
     updatedAt: '2024-06-01T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a home and garden e-commerce platform for his business',
   },
   {
     id: '30',
     title: 'Beauty & Cosmetics Shopify Store',
     description: 'Beauty and cosmetics e-commerce store with skin analysis tools, shade matching, and subscription boxes. Features include virtual consultations and ingredient information.',
     image: '/uploads/shopify-5.jpg',
-    technologies: 'Shopify, Liquid, AI Integration, Subscription Management, AR Filters',
+    technologies: 'Shopify, Liquid, AI Integration, Subscription Management',
     github: 'https://github.com/way-wise/beauty-cosmetics-shopify-store',
     demo: '',
     featured: false,
@@ -461,13 +467,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-05T00:00:00Z',
     updatedAt: '2024-06-05T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a beauty and cosmetics e-commerce platform for his business',
   },
   {
     id: '31',
     title: 'Sports & Fitness Shopify Store',
     description: 'Sports and fitness equipment store with workout guides, size calculators, and nutrition supplements. Features include community features and fitness challenges.',
     image: '/uploads/shopify-6.jpg',
-    technologies: 'Shopify, Liquid, Community Apps, Fitness APIs, Nutrition Database',
+    technologies: 'Shopify, Liquid, Community Apps, Fitness APIs',
     github: 'https://github.com/way-wise/sports-fitness-shopify-store',
     demo: '',
     featured: false,
@@ -475,13 +482,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-10T00:00:00Z',
     updatedAt: '2024-06-10T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a sports and fitness e-commerce platform for his business',
   },
   {
     id: '32',
     title: 'Books & Media Shopify Store',
     description: 'Books and media e-commerce store with digital downloads, audiobook integration, and reading recommendations. Features include book clubs and author interviews.',
     image: '/uploads/shopify-7.jpg',
-    technologies: 'Shopify, Liquid, Digital Downloads, Audio Streaming, Recommendation Engine',
+    technologies: 'Shopify, Liquid, Digital Downloads, Audio Streaming',
     github: 'https://github.com/way-wise/books-media-shopify-store',
     demo: '',
     featured: false,
@@ -489,13 +497,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-15T00:00:00Z',
     updatedAt: '2024-06-15T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a books and media e-commerce platform for his business',
   },
   {
     id: '33',
     title: 'Jewelry & Accessories Shopify Store',
     description: 'Luxury jewelry and accessories store with custom engraving, virtual try-on, and gift wrapping services. Features include jewelry care guides and customization tools.',
     image: '/uploads/shopify-8.jpg',
-    technologies: 'Shopify, Liquid, 3D Visualization, Customization Tools, Gift Services',
+    technologies: 'Shopify, Liquid, 3D Visualization, Customization Tools',
     github: 'https://github.com/way-wise/jewelry-accessories-shopify-store',
     demo: '',
     featured: false,
@@ -503,6 +512,7 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-20T00:00:00Z',
     updatedAt: '2024-06-20T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a jewelry and accessories e-commerce platform for his business',
   },
 
   // No-Code Platform Projects
@@ -511,7 +521,7 @@ export const projects: Project[] = [
     title: 'Business Automation Platform',
     description: 'No-code business automation platform allowing users to create custom workflows, integrations, and data processing pipelines without coding knowledge.',
     image: '/uploads/nc-1.webp',
-    technologies: 'No-Code Platform, Workflow Automation, API Integrations, Data Processing',
+    technologies: 'No-Code Platform, API Integrations, Data Processing',
     github: 'https://github.com/way-wise/business-automation-platform',
     demo: '',
     featured: false,
@@ -519,13 +529,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-06-25T00:00:00Z',
     updatedAt: '2024-06-25T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a business automation platform for his business',
   },
   {
     id: '35',
     title: 'Landing Page Builder',
     description: 'Drag-and-drop landing page builder with pre-built templates, A/B testing capabilities, and conversion optimization tools for marketing campaigns.',
     image: '/uploads/nc-2.webp',
-    technologies: 'No-Code Builder, Drag-and-Drop, A/B Testing, Conversion Optimization',
+    technologies: 'No-Code Builder, Drag-and-Drop, A/B Testing',
     github: 'https://github.com/way-wise/landing-page-builder',
     demo: '',
     featured: false,
@@ -533,13 +544,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-01T00:00:00Z',
     updatedAt: '2024-07-01T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a landing page builder for his business',
   },
   {
     id: '36',
     title: 'CRM System Builder',
     description: 'No-code CRM system builder allowing businesses to create custom customer relationship management solutions with automated workflows and reporting.',
     image: '/uploads/nc-3.webp',
-    technologies: 'No-Code CRM, Workflow Automation, Reporting Tools, Data Management',
+    technologies: 'No-Code CRM, Workflow Automation, Reporting Tools',
     github: 'https://github.com/way-wise/crm-system-builder',
     demo: '',
     featured: false,
@@ -547,6 +559,7 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-05T00:00:00Z',
     updatedAt: '2024-07-05T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a CRM system builder for his business',
   },
   {
     id: '37',
@@ -561,6 +574,7 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-10T00:00:00Z',
     updatedAt: '2024-07-10T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a survey and form builder for his business',
   },
   {
     id: '38',
@@ -575,13 +589,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-15T00:00:00Z',
     updatedAt: '2024-07-15T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a e-learning platform builder for his business',
   },
   {
     id: '39',
     title: 'Event Management Platform',
     description: 'No-code event management platform for creating, managing, and promoting events with ticketing, attendee management, and analytics.',
     image: '/uploads/no-code-06.jpg',
-    technologies: 'No-Code Events, Ticketing System, Attendee Management, Analytics',
+    technologies: 'No-Code Events, Ticketing System, Attendee Management',
     github: 'https://github.com/way-wise/event-management-platform',
     demo: '',
     featured: false,
@@ -589,13 +604,14 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-20T00:00:00Z',
     updatedAt: '2024-07-20T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a event management platform for his business',
   },
   {
     id: '40',
     title: 'Project Management Tool',
     description: 'No-code project management tool with task tracking, team collaboration, and resource management features for agile development workflows.',
     image: '/uploads/no-code-08.jpg',
-    technologies: 'No-Code PM, Task Tracking, Team Collaboration, Resource Management',
+    technologies: 'No-Code PM, Task Tracking, Team Collaboration',
     github: 'https://github.com/way-wise/project-management-tool',
     demo: '',
     featured: false,
@@ -603,6 +619,7 @@ export const projects: Project[] = [
     categoryId: '6', // No-Code
     createdAt: '2024-07-25T00:00:00Z',
     updatedAt: '2024-07-25T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a project management tool for his business',
   },
 
   // Additional Projects
@@ -619,6 +636,7 @@ export const projects: Project[] = [
     categoryId: '3', // Full-Stack
     createdAt: '2024-08-01T00:00:00Z',
     updatedAt: '2024-08-01T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a fitness platform for his business',
   },
   {
     id: '42',
@@ -633,6 +651,7 @@ export const projects: Project[] = [
     categoryId: '3', // Full-Stack
     createdAt: '2024-08-05T00:00:00Z',
     updatedAt: '2024-08-05T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a alumni network platform for his business',
   },
 
   // Email Template Projects
@@ -641,7 +660,7 @@ export const projects: Project[] = [
     title: 'Email Marketing Templates',
     description: 'Professional email marketing templates with responsive design, A/B testing capabilities, and automation features for various industries.',
     image: '/uploads/email-template/email-template-1.png',
-    technologies: 'HTML, CSS, JavaScript, Email Marketing Platforms, A/B Testing',
+    technologies: 'HTML, CSS, JavaScript, Email Marketing Platforms',
     github: 'https://github.com/way-wise/email-marketing-templates',
     demo: '',
     featured: false,
@@ -649,13 +668,14 @@ export const projects: Project[] = [
     categoryId: '1', // Frontend
     createdAt: '2024-08-10T00:00:00Z',
     updatedAt: '2024-08-10T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a email marketing templates for his business',
   },
   {
     id: '44',
     title: 'Newsletter Templates',
     description: 'Custom newsletter templates with drag-and-drop editor, analytics integration, and subscriber management for content marketing campaigns.',
     image: '/uploads/email-template/email-template-2.png',
-    technologies: 'HTML, CSS, Drag-and-Drop Editor, Analytics, Subscriber Management',
+    technologies: 'HTML, CSS, Drag-and-Drop Editor, Subscriber Management',
     github: 'https://github.com/way-wise/newsletter-templates',
     demo: '',
     featured: false,
@@ -663,13 +683,14 @@ export const projects: Project[] = [
     categoryId: '1', // Frontend
     createdAt: '2024-08-15T00:00:00Z',
     updatedAt: '2024-08-15T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a newsletter templates for his business',
   },
   {
     id: '45',
     title: 'Transactional Email Templates',
     description: 'Professional transactional email templates for order confirmations, password resets, and account notifications with branding consistency.',
     image: '/uploads/email-template/email-template-3.png',
-    technologies: 'HTML, CSS, Transactional Email Services, Branding, Automation',
+    technologies: 'HTML, CSS, Transactional Email Services, Branding',
     github: 'https://github.com/way-wise/transactional-email-templates',
     demo: '',
     featured: false,
@@ -677,13 +698,14 @@ export const projects: Project[] = [
     categoryId: '1', // Frontend
     createdAt: '2024-08-20T00:00:00Z',
     updatedAt: '2024-08-20T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a transactional email templates for his business',
   },
   {
     id: '46',
     title: 'Welcome Email Series',
     description: 'Automated welcome email series with onboarding sequences, user engagement tracking, and personalized content delivery for new subscribers.',
     image: '/uploads/email-template/email-template-4.png',
-    technologies: 'HTML, CSS, Email Automation, Personalization, Engagement Tracking',
+    technologies: 'HTML, CSS, Email Automation, Personalization',
     github: 'https://github.com/way-wise/welcome-email-series',
     demo: '',
     featured: false,
@@ -691,6 +713,7 @@ export const projects: Project[] = [
     categoryId: '1', // Frontend
     createdAt: '2024-08-25T00:00:00Z',
     updatedAt: '2024-08-25T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a welcome email series for his business',
   }
 ]
 
