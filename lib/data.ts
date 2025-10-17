@@ -208,6 +208,7 @@ export const projects: Project[] = [
     categoryId: '5', // API
     createdAt: '2024-03-10T00:00:00Z',
     updatedAt: '2024-03-10T00:00:00Z',
+    clientLocation: 'This was build for US client, who wants his site will have thousands of remote jobs and candidates',
   },
   {
     id: '14',
@@ -222,6 +223,7 @@ export const projects: Project[] = [
     categoryId: '2', // Backend
     createdAt: '2024-03-15T00:00:00Z',
     updatedAt: '2024-03-15T00:00:00Z',
+    clientLocation: 'This client is also from USA, he sells ports plugs on Amazon, to save commission fees, he wants to build his own shipping system',
   },
   {
     id: '15',
