@@ -115,10 +115,7 @@ export function Navigation() {
         }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-white font-mono">&lt;Firoz Bari /&gt;</span>
-            </Link>
+          <div className="flex items-center justify-center h-16">
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
@@ -131,7 +128,7 @@ export function Navigation() {
                   <LinkComponent
                     key={item.href}
                     {...linkProps}
-                    className="text-sm text-gray-300 hover:text-gray-100 transition-colors"
+                    className="text-2xl font-medium text-gray-50 hover:text-gray-100 transition-colors"
                   >
                     {item.label}
                   </LinkComponent>

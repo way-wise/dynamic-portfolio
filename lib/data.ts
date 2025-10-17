@@ -253,6 +253,7 @@ export const projects: Project[] = [
     categoryId: '2', // Backend
     createdAt: '2024-03-25T00:00:00Z',
     updatedAt: '2024-03-25T00:00:00Z',
+    clientLocation: 'This client is belong to Montreal, Canada, he wants to build a platform where any user can easily find and book events and activities',
   },
 
   // Mobile Applications
@@ -269,6 +270,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-01T00:00:00Z',
     updatedAt: '2024-04-01T00:00:00Z',
+    clientLocation: 'A German client, who has restaurant in Germany, he wants to build a mobile app for his restaurant, to manage his orders and inventory',
   },
   {
     id: '18',
