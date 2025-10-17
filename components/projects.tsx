@@ -136,7 +136,7 @@ export function Projects() {
                     {
                       project.clientLocation && ( 
                         <div className="inline-flex items-center gap-2 bg-cyan-100 p-2 rounded-md border border-l-4 border-cyan-500">
-                          <p className="text-cyan-700 text-base">"{project.clientLocation}"</p>
+                          <p className="text-cyan-800 font-medium text-base">"{project.clientLocation}"</p>
                         </div>
                       )
                     }
