@@ -307,7 +307,7 @@ export const projects: Project[] = [
     title: 'Banking Mobile App',
     description: 'Secure banking mobile application with biometric authentication, fund transfers, and financial management tools. Includes real-time notifications and transaction history.',
     image: '/uploads/mobile/app-4.png',
-    technologies: 'React Native, Node.js, PostgreSQL, Biometric Auth, Encryption',
+    technologies: 'React Native, Node.js, PostgreSQL, Encryption',
     github: 'https://github.com/way-wise/banking-mobile-app',
     demo: '',
     featured: false,
@@ -322,7 +322,7 @@ export const projects: Project[] = [
     title: 'Social Media Mobile App',
     description: 'Social media mobile application with photo sharing, messaging, and story features. Includes advanced privacy controls and content moderation.',
     image: '/uploads/mobile/app-5.png',
-    technologies: 'React Native, Node.js, MongoDB, AWS S3, Socket.io',
+    technologies: 'React Native, Node.js, MongoDB, Socket.io',
     github: 'https://github.com/way-wise/social-media-mobile-app',
     demo: '',
     featured: false,
@@ -330,13 +330,14 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-20T00:00:00Z',
     updatedAt: '2024-04-20T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a social media platform for his business',
   },
   {
     id: '22',
     title: 'Healthcare Mobile App',
     description: 'Healthcare mobile application for telemedicine consultations, appointment booking, and health record management. Features include video calls and prescription management.',
     image: '/uploads/mobile/app-6.png',
-    technologies: 'React Native, Node.js, PostgreSQL, WebRTC, HIPAA Compliance',
+    technologies: 'React Native, Node.js, PostgreSQL, HIPAA Compliance',
     github: 'https://github.com/way-wise/healthcare-mobile-app',
     demo: '',
     featured: false,
@@ -344,13 +345,14 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-25T00:00:00Z',
     updatedAt: '2024-04-25T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a healthcare mobile app for his business',
   },
   {
     id: '23',
     title: 'Education Mobile App',
     description: 'Educational mobile application with interactive learning modules, progress tracking, and offline content access. Features include quizzes, certificates, and discussion forums.',
     image: '/uploads/mobile/app-7.png',
-    technologies: 'React Native, Node.js, MongoDB, Video Streaming, Offline Storage',
+    technologies: 'React Native, Node.js, MongoDB, Offline Storage',
     github: 'https://github.com/way-wise/education-mobile-app',
     demo: '',
     featured: false,
@@ -358,6 +360,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-05-01T00:00:00Z',
     updatedAt: '2024-05-01T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a education mobile app for his business',
   },
   {
     id: '24',
