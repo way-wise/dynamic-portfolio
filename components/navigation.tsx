@@ -38,10 +38,10 @@ export function Navigation() {
   }, [isMobileMenuOpen])
 
   const navItems = [
+    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Experience", href: "/experience" },
     { label: "Projects", href: "/#projects" },
-    { label: "Skills", href: "/skills" },
+    { label: "Experience & Skills", href: "/skills" },
     { label: "Contact", href: "/#contact" },
   ]
 
