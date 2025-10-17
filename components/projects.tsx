@@ -141,14 +141,14 @@ export function Projects() {
                       )
                     }
                   <div className="flex gap-3 pt-2">
-                    {project.github && (
+                    {/* {project.github && (
                       <Button variant="outline" size="sm" asChild className="!bg-transparent !text-black">
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
                           <Github className="mr-2 h-4 w-4" />
                           Code
                         </a>
                       </Button>
-                    )}
+                    )} */}
                     {project.demo && (
                       <Button size="sm" asChild>
                         <a href={project.demo} target="_blank" rel="noopener noreferrer">

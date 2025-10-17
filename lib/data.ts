@@ -146,6 +146,7 @@ export const projects: Project[] = [
     categoryId: '7', // AI/ML
     createdAt: '2024-02-01T00:00:00Z',
     updatedAt: '2024-02-01T00:00:00Z',
+    clientLocation: 'My Recurring client from Canada, I build recruitment platform for job seekers and healthcare solutions',
   },
   {
     id: '7',
@@ -160,6 +161,7 @@ export const projects: Project[] = [
     categoryId: '3', // Full-Stack
     createdAt: '2024-02-10T00:00:00Z',
     updatedAt: '2024-02-10T00:00:00Z',
+    clientLocation: 'This was build for Australia client, he need a corporate business website for his company',
   },
 
   // Backend/API Projects
@@ -176,6 +178,7 @@ export const projects: Project[] = [
     categoryId: '5', // API
     createdAt: '2024-03-01T00:00:00Z',
     updatedAt: '2024-03-01T00:00:00Z',
+    clientLocation: 'This was build for Ireland client, mainly they organize activities and events for children and teenagers',
   },
   {
     id: '12',
@@ -190,6 +193,7 @@ export const projects: Project[] = [
     categoryId: '2', // Backend
     createdAt: '2024-03-05T00:00:00Z',
     updatedAt: '2024-03-05T00:00:00Z',
+    clientLocation: 'This was build for UK client, I build travel booking platform for flight and hotel reservations',
   },
   {
     id: '13',
