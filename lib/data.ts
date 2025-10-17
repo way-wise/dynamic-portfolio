@@ -238,6 +238,7 @@ export const projects: Project[] = [
     categoryId: '2', // Backend
     createdAt: '2024-03-20T00:00:00Z',
     updatedAt: '2024-03-20T00:00:00Z',
+    clientLocation: 'Seatwaves is resell ticket marketplace platform for my USA client, here has also brocker API',
   },
   {
     id: '16',
