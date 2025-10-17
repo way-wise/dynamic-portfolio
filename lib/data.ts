@@ -88,20 +88,6 @@ export const categories: Category[] = [
 export const projects: Project[] = [
   // Web Development Projects
   {
-    id: '1',
-    title: 'WayWise Global Trading Platform',
-    description: 'A comprehensive trading platform built for WayWise Global featuring real-time market data, portfolio management, and advanced trading tools. The platform includes user authentication, secure payment processing, and comprehensive analytics dashboard for traders.',
-    image: '/uploads/web/waywiseglobal.png',
-    technologies: 'Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Stripe, Chart.js',
-    github: 'https://github.com/way-wise/waywise-global-trading',
-    demo: '',
-    featured: true,
-    published: true,
-    categoryId: '3', // Full-Stack
-    createdAt: '2024-01-15T00:00:00Z',
-    updatedAt: '2024-01-15T00:00:00Z',
-  },
-  {
     id: '2',
     title: 'FoxBridge Corporate Website',
     description: 'Modern corporate website for FoxBridge featuring responsive design, interactive animations, and comprehensive business information. Built with performance optimization and SEO best practices for maximum visibility.',
@@ -158,20 +144,6 @@ export const projects: Project[] = [
     updatedAt: '2024-02-01T00:00:00Z',
   },
   {
-    id: '6',
-    title: 'WayWise Jobs Portal',
-    description: 'Professional job portal connecting employers with qualified candidates. Features include advanced search filters, company profiles, application tracking, and real-time notifications for job opportunities.',
-    image: '/uploads/web/waywisejobs.png',
-    technologies: 'Next.js, TypeScript, Prisma, PostgreSQL, Redis, SendGrid',
-    github: 'https://github.com/way-wise/waywise-jobs-portal',
-    demo: '',
-    featured: false,
-    published: true,
-    categoryId: '3', // Full-Stack
-    createdAt: '2024-02-05T00:00:00Z',
-    updatedAt: '2024-02-05T00:00:00Z',
-  },
-  {
     id: '7',
     title: 'Allora Corporate Solutions',
     description: 'Enterprise-grade corporate solutions platform offering business process automation, document management, and team collaboration tools. Built for scalability and enterprise security requirements.',
@@ -184,48 +156,6 @@ export const projects: Project[] = [
     categoryId: '3', // Full-Stack
     createdAt: '2024-02-10T00:00:00Z',
     updatedAt: '2024-02-10T00:00:00Z',
-  },
-  {
-    id: '8',
-    title: 'Nirmaan Source Construction Portal',
-    description: 'Comprehensive construction management platform for Nirmaan Source featuring project tracking, resource management, and client communication tools. Includes mobile app for on-site workers.',
-    image: '/uploads/web/nirmaansource.png',
-    technologies: 'React Native, Node.js, PostgreSQL, AWS S3, Push Notifications',
-    github: 'https://github.com/way-wise/nirmaan-source-portal',
-    demo: '',
-    featured: false,
-    published: true,
-    categoryId: '4', // Mobile
-    createdAt: '2024-02-15T00:00:00Z',
-    updatedAt: '2024-02-15T00:00:00Z',
-  },
-  {
-    id: '9',
-    title: 'WayWise Trading Dashboard',
-    description: 'Advanced trading dashboard with real-time market data, portfolio analytics, and automated trading strategies. Features include risk management tools, performance tracking, and comprehensive reporting.',
-    image: '/uploads/waywisetrading.png',
-    technologies: 'Vue.js, Chart.js, WebSocket, Node.js, PostgreSQL, Redis',
-    github: 'https://github.com/way-wise/waywise-trading-dashboard',
-    demo: '',
-    featured: false,
-    published: true,
-    categoryId: '1', // Frontend
-    createdAt: '2024-02-20T00:00:00Z',
-    updatedAt: '2024-02-20T00:00:00Z',
-  },
-  {
-    id: '10',
-    title: 'WWT Business Solutions',
-    description: 'Comprehensive business solutions platform offering CRM, project management, and financial tracking tools. Designed for small to medium businesses with scalable architecture.',
-    image: '/uploads/web/wwt.png',
-    technologies: 'React, Node.js, MongoDB, Stripe, SendGrid, AWS',
-    github: 'https://github.com/way-wise/wwt-business-solutions',
-    demo: '',
-    featured: false,
-    published: true,
-    categoryId: '3', // Full-Stack
-    createdAt: '2024-02-25T00:00:00Z',
-    updatedAt: '2024-02-25T00:00:00Z',
   },
 
   // Backend/API Projects
