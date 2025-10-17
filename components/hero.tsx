@@ -133,53 +133,7 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* <div className="flex items-center justify-center lg:justify-start gap-4 pt-4" data-aos="fade-up" data-aos-delay="600">
-              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="https://github.com/way-wise" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild className="text-white bg-purple-600 hover:!bg-purple-500 transition-colors">
-                <a href="mailto:firoz@waywise.pro" aria-label="Email">
-                  <Mail className="h-5 w-5" />
-                </a>
-              </Button>
-            </div> */}
 
-            {/* Learn More About Me Section - Highlighted Box */}
-            <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
-              <div className="relative p-6 bg-[#3BE0A6] max-w-[555px] rounded-2xl">
-                <div className="relative">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
-                    <h3 className="text-2xl font-semibold text-[#1B3447]">
-                      Learn More About Me
-                    </h3>
-                  </div>
-
-                  <p className="text-lg text-[#1B3447] mb-6 text-center lg:text-left">
-                    With over 12 years of experience building scalable,
-                    user-focused digital solutions. I enjoy turning complex
-                    challenges into simple, elegant, and efficient products.
-                  </p>
-
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                    <a
-                      href="/about"
-                      className="inline-flex items-center gap-2 text-[#1B3447] px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]"
-                    >
-                      Learn More
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Image */}
@@ -189,7 +143,7 @@ export function Hero() {
             data-aos-delay="400"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-purple-500/50 rounded-full blur-3xl scale-110 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-purple-200 rounded-full blur-3xl scale-110 animate-pulse"></div>
               <div className="relative w-60 h-60 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
                 <Image
                   src="/firoz_bari.svg"
@@ -212,26 +166,55 @@ export function Hero() {
                 <div className="text-xl">🚀</div>
               </div>
             </div>
-            <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
-              <div className="relative p-6 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
-                <div className="relative">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
-                    <h3 className="text-2xl font-semibold text-black">
-                      My Experience & Skills
-                    </h3>
-                  </div>
+          </div>
+          {/* Learn More About Me Section - Highlighted Box */}
+          <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
+            <div className="relative p-6 bg-[#3BE0A6] max-w-[555px] rounded-2xl">
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
+                  <h3 className="text-2xl font-semibold text-[#1B3447]">
+                    Learn More About Me
+                  </h3>
+                </div>
 
-                  <p className="text-lg text-black mb-6 text-center lg:text-left">
-                    With 12+ years in full-stack development, I’ve honed a
-                    diverse set of skills and experiences that drive impactful
-                    digital solutions. Explore the full journey and skillset
-                    below.
-                  </p>
+                <p className="text-lg text-[#1B3447] mb-6 text-center lg:text-left">
+                  With over 12 years of experience building scalable,
+                  user-focused digital solutions. I enjoy turning complex
+                  challenges into simple, elegant, and efficient products.
+                </p>
 
-                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                      <a href="/skills" className="inline-flex items-center gap-2 text-black px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]">Explore My Skills <ArrowRight className="h-4 w-4" /></a>
-                  </div>
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                  <a
+                    href="/about"
+                    className="inline-flex items-center gap-2 text-[#1B3447] px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]"
+                  >
+                    Learn More
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="pt-8 flex justify-center" data-aos="fade-up" data-aos-delay="700">
+            <div className="relative p-6 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
+                  <h3 className="text-2xl font-semibold text-black">
+                    My Experience & Skills
+                  </h3>
+                </div>
+
+                <p className="text-lg text-black mb-6 text-center lg:text-left">
+                  With 12+ years in full-stack development, I’ve honed a
+                  diverse set of skills and experiences that drive impactful
+                  digital solutions. Explore the full journey and skillset
+                  below.
+                </p>
+
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                  <a href="/skills" className="inline-flex items-center gap-2 text-black px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]">Explore My Skills <ArrowRight className="h-4 w-4" /></a>
                 </div>
               </div>
             </div>
