@@ -285,6 +285,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-05T00:00:00Z',
     updatedAt: '2024-04-05T00:00:00Z',
+    clientLocation: 'This mobile app is for a UK client, he wants to build a e-commerce platform for his business',
   },
   {
     id: '19',
@@ -299,6 +300,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-10T00:00:00Z',
     updatedAt: '2024-04-10T00:00:00Z',
+    clientLocation: 'One of favorite clients from Netherlands, he wants to build a food delivery platform for his business',
   },
   {
     id: '20',
@@ -313,6 +315,7 @@ export const projects: Project[] = [
     categoryId: '4', // Mobile
     createdAt: '2024-04-15T00:00:00Z',
     updatedAt: '2024-04-15T00:00:00Z',
+    clientLocation: 'This client is from USA, he wants to build a banking mobile app for his business',
   },
   {
     id: '21',
