@@ -14,6 +14,7 @@ export interface Project {
   categoryId: string
   createdAt: string
   updatedAt: string
+  clientLocation?: string
 }
 
 export interface Category {
@@ -23,7 +24,7 @@ export interface Category {
   color: string
   icon: string
   createdAt: string
-  updatedAt: string
+  updatedAt: string 
 }
 
 // Categories data
@@ -90,7 +91,7 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'FoxBridge Corporate Website',
-    description: 'Modern corporate website for FoxBridge featuring responsive design, interactive animations, and comprehensive business information. Built with performance optimization and SEO best practices for maximum visibility.',
+    description: 'Modern corporate website for Golfcourse of FoxBridge featuring responsive design, interactive animations, and comprehensive business information.',
     image: '/uploads/web/foxbridge.png',
     technologies: 'React, Next.js, Framer Motion, Tailwind CSS, Contentful CMS',
     github: 'https://github.com/way-wise/foxbridge-corporate',
@@ -100,11 +101,12 @@ export const projects: Project[] = [
     categoryId: '1', // Frontend
     createdAt: '2024-01-10T00:00:00Z',
     updatedAt: '2024-01-10T00:00:00Z',
+    clientLocation: 'This was one of my first projects in Canada, I build golfcourse website for FoxBridge',
   },
   {
     id: '3',
     title: 'Sasify AI Platform',
-    description: 'AI-powered SaaS platform providing intelligent automation solutions for businesses. Features include machine learning models, API integrations, and comprehensive dashboard for monitoring AI performance and usage analytics.',
+    description: 'AI-powered SaaS platform providing intelligent automation solutions for businesses. Features include machine learning models, API integrations, and comprehensive dashboard',
     image: '/uploads/web/sasifyai.png',
     technologies: 'React, Node.js, Python, TensorFlow, MongoDB, Redis, Docker',
     github: 'https://github.com/way-wise/sasify-ai-platform',
@@ -114,6 +116,7 @@ export const projects: Project[] = [
     categoryId: '7', // AI/ML
     createdAt: '2024-01-05T00:00:00Z',
     updatedAt: '2024-01-05T00:00:00Z',
+    clientLocation: 'This client is located in Spain, They build AI platform and came to me for landing page design and development',
   },
   {
     id: '4',
@@ -128,6 +131,7 @@ export const projects: Project[] = [
     categoryId: '3', // Full-Stack
     createdAt: '2024-01-01T00:00:00Z',
     updatedAt: '2024-01-01T00:00:00Z',
+    clientLocation: 'Of this Ireland client, I build telemedicine platform for patients to connect with healthcare providers through AI powered voice assistant',
   },
   {
     id: '5',

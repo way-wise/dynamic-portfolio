@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Filter, Search } from "lucide-react"
+import { ExternalLink, Github, Filter, Search, MapPin } from "lucide-react"
 import { projects, categories, Project, Category } from "@/lib/data"
 
 export function Projects() {
@@ -133,6 +133,13 @@ export function Projects() {
                         )
                       })}
                     </div>
+                    {
+                      project.clientLocation && ( 
+                        <div className="inline-flex items-center gap-2 bg-blue-600 p-2 rounded-md border-l-2 border-black">
+                          <p className="text-white text-base">"{project.clientLocation}"</p>
+                        </div>
+                      )
+                    }
                   <div className="flex gap-3 pt-2">
                     {project.github && (
                       <Button variant="outline" size="sm" asChild className="!bg-transparent !text-black">
