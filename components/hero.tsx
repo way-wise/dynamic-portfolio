@@ -20,40 +20,6 @@ export function Hero() {
         backgroundPosition: "center",
       }}
     >
-      {/* Elegant Background Shapes */}
-      {/* <div className="absolute inset-0 z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div
-          className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div
-          className="absolute bottom-20 left-1/4 w-80 h-80 bg-gradient-to-r from-cyan-500/30 to-blue-500/30 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-        <div
-          className="absolute top-1/2 right-1/3 w-64 h-64 bg-gradient-to-r from-green-500/25 to-teal-500/25 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1.5s" }}
-        ></div>
-        <div
-          className="absolute top-32 right-1/3 w-4 h-4 bg-blue-400/30 rotate-45 animate-bounce"
-          style={{ animationDelay: "0.5s" }}
-        ></div>
-        <div
-          className="absolute bottom-40 left-1/3 w-6 h-6 bg-purple-400/30 rotate-12 animate-bounce"
-          style={{ animationDelay: "1.5s" }}
-        ></div>
-        <div
-          className="absolute top-1/2 right-10 w-3 h-3 bg-pink-400/30 rotate-45 animate-bounce"
-          style={{ animationDelay: "2.5s" }}
-        ></div>
-        <div className="absolute top-1/4 left-1/2 w-px h-32 bg-gradient-to-b from-transparent via-blue-400/20 to-transparent animate-pulse"></div>
-        <div
-          className="absolute bottom-1/3 right-1/4 w-24 h-px bg-gradient-to-r from-transparent via-purple-400/20 to-transparent animate-pulse"
-          style={{ animationDelay: "1s" }}
-        ></div>
-      </div> */}
-
       <div className="container mx-auto relative z-10 lg:h-[85vh] flex flex-col gap-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
