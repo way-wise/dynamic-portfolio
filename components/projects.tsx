@@ -31,11 +31,11 @@ export function Projects() {
   }
 
   return (
-    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: 'url(/project-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-50">Featured Projects</h2>
+          <p className="text-lg text-gray-100 max-w-2xl mx-auto">
             Explore my portfolio of diverse projects across different technologies and platforms
           </p>
         </div>
