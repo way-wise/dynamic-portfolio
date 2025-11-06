@@ -13,7 +13,7 @@ import { TypingAnimation } from "@/components/typing-animation";
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen pt-32 pb-12 flex items-center justify-center px-4 sm:px-6 lg:px-8 border-b border-border overflow-hidden z-0 bg-cover bg-no-repeat"
+      className="relative min-h-screen pt-32 pb-6 px-4 sm:px-6 lg:px-8 border-b border-border overflow-hidden z-0 bg-cover bg-no-repeat"
       style={{
         backgroundImage: "url(/hero-bg.png)",
         backgroundSize: "cover",
@@ -54,7 +54,7 @@ export function Hero() {
         ></div>
       </div> */}
 
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-10 lg:h-[85vh] flex flex-col gap-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
@@ -137,7 +137,7 @@ export function Hero() {
           >
             <div className="relative">
               {/* <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-purple-200 rounded-full blur-3xl scale-110 animate-pulse"></div> */}
-              <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
+              <div className="relative w-60 h-60 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
                 <Image
                   src="/firoz_bari.svg"
                   alt="Firoz Bari - Full-Stack Developer & AI/ML Specialist"
@@ -161,17 +161,19 @@ export function Hero() {
             </div>
           </div>
           {/* Learn More About Me Section - Highlighted Box */}
+        </div>
+        <div className="grow mt-auto grid grid-cols-1 lg:grid-cols-2 items-end gap-4">
           <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
             <div className="relative p-6 bg-[#31f8b2] max-w-[555px] rounded-2xl">
               <div className="relative">
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-2 mb-2">
                   <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
-                  <h3 className="text-2xl font-semibold text-[#1B3447]">
+                  <h3 className="text-xl font-semibold text-[#1B3447]">
                     About Me
                   </h3>
                 </div>
 
-                <p className="text-lg text-[#1B3447] mb-6 text-center lg:text-left">
+                <p className="text-lg text-[#1B3447] mb-3 text-center lg:text-left line-clamp-2">
                   With over 12 years of experience building scalable,
                   user-focused digital solutions. I enjoy turning complex
                   challenges into simple, elegant, and efficient products.
@@ -180,7 +182,7 @@ export function Hero() {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   <a
                     href="/about"
-                    className="inline-flex items-center gap-2 text-[#1B3447] px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#38e3fa]"
+                    className="inline-flex items-center gap-2 text-[#1B3447] px-3 py-1.5 text-base font-medium  rounded-md border-none !bg-[#38e3fa]"
                   >
                     Read More
                     <ArrowRight className="h-4 w-4" />
@@ -194,16 +196,16 @@ export function Hero() {
             data-aos="fade-up"
             data-aos-delay="700"
           >
-            <div className="relative p-6 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
+            <div className="relative p-4 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
               <div className="relative">
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-2 mb-2">
                   <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
-                  <h3 className="text-2xl font-semibold text-black">
+                  <h3 className="text-xl font-semibold text-black">
                     My Experience & Skills
                   </h3>
                 </div>
 
-                <p className="text-lg text-black mb-6 text-center lg:text-left">
+                <p className="text-lg text-black mb-3 text-center lg:text-left line-clamp-2">
                   With 12+ years in full-stack development, I’ve honed a diverse
                   set of skills and experiences that drive impactful digital
                   solutions. Explore the full journey and skillset below.
@@ -212,7 +214,7 @@ export function Hero() {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   <a
                     href="/skills"
-                    className="inline-flex items-center gap-2 text-black px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]"
+                    className="inline-flex items-center gap-2 text-black px-3 py-1.5 text-base font-medium  rounded-md border-none !bg-[#ABF5FF]"
                   >
                     Explore My Skills <ArrowRight className="h-4 w-4" />
                   </a>
