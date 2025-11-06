@@ -122,7 +122,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto bg-blue-900!"
               >
                 <a href="#contact">Get In Touch</a>
               </Button>
@@ -164,12 +164,12 @@ export function Hero() {
           </div>
           {/* Learn More About Me Section - Highlighted Box */}
           <div className="pt-8" data-aos="fade-up" data-aos-delay="700">
-            <div className="relative p-6 bg-[#3BE0A6] max-w-[555px] rounded-2xl">
+            <div className="relative p-6 bg-[#31f8b2] max-w-[555px] rounded-2xl">
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full"></div>
                   <h3 className="text-2xl font-semibold text-[#1B3447]">
-                    Learn More About Me
+                    About Me
                   </h3>
                 </div>
 
@@ -182,9 +182,9 @@ export function Hero() {
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   <a
                     href="/about"
-                    className="inline-flex items-center gap-2 text-[#1B3447] px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]"
+                    className="inline-flex items-center gap-2 text-[#1B3447] px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#38e3fa]"
                   >
-                    Learn More
+                    Read More
                     <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
