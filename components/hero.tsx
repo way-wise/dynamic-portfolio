@@ -21,8 +21,7 @@ export function Hero() {
       }}
     >
       {/* Elegant Background Shapes */}
-      <div className="absolute inset-0 z-10">
-        {/* Large floating circles */}
+      {/* <div className="absolute inset-0 z-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
         <div
           className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse"
@@ -36,8 +35,6 @@ export function Hero() {
           className="absolute top-1/2 right-1/3 w-64 h-64 bg-gradient-to-r from-green-500/25 to-teal-500/25 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1.5s" }}
         ></div>
-
-        {/* Geometric shapes */}
         <div
           className="absolute top-32 right-1/3 w-4 h-4 bg-blue-400/30 rotate-45 animate-bounce"
           style={{ animationDelay: "0.5s" }}
@@ -50,14 +47,12 @@ export function Hero() {
           className="absolute top-1/2 right-10 w-3 h-3 bg-pink-400/30 rotate-45 animate-bounce"
           style={{ animationDelay: "2.5s" }}
         ></div>
-
-        {/* Floating lines */}
         <div className="absolute top-1/4 left-1/2 w-px h-32 bg-gradient-to-b from-transparent via-blue-400/20 to-transparent animate-pulse"></div>
         <div
           className="absolute bottom-1/3 right-1/4 w-24 h-px bg-gradient-to-r from-transparent via-purple-400/20 to-transparent animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
-      </div>
+      </div> */}
 
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -138,13 +133,13 @@ export function Hero() {
 
           {/* Right Column - Image */}
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex lg:justify-center"
             data-aos="fade-left"
             data-aos-delay="400"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-purple-200 rounded-full blur-3xl scale-110 animate-pulse"></div>
-              <div className="relative w-60 h-60 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
+              {/* <div className="absolute inset-0 bg-gradient-to-r from-purple-300 to-purple-200 rounded-full blur-3xl scale-110 animate-pulse"></div> */}
+              <div className="relative w-60 h-60 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl">
                 <Image
                   src="/firoz_bari.svg"
                   alt="Firoz Bari - Full-Stack Developer & AI/ML Specialist"
@@ -153,7 +148,7 @@ export function Hero() {
                   priority
                 />
               </div>
-              <div
+              {/* <div
                 className="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-600/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-purple-600/50 animate-bounce"
                 style={{ animationDelay: "1s" }}
               >
@@ -164,7 +159,7 @@ export function Hero() {
                 style={{ animationDelay: "2s" }}
               >
                 <div className="text-xl">🚀</div>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Learn More About Me Section - Highlighted Box */}
@@ -196,7 +191,7 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="pt-8 flex justify-center" data-aos="fade-up" data-aos-delay="700">
+          <div className="pt-8 flex lg:justify-end" data-aos="fade-up" data-aos-delay="700">
             <div className="relative p-6 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
