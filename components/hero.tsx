@@ -127,8 +127,6 @@ export function Hero() {
                 <a href="#contact">Get In Touch</a>
               </Button>
             </div>
-
-
           </div>
 
           {/* Right Column - Image */}
@@ -148,7 +146,7 @@ export function Hero() {
                   priority
                 />
               </div>
-              {/* <div
+              <div
                 className="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-600/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-purple-600/50 animate-bounce"
                 style={{ animationDelay: "1s" }}
               >
@@ -159,7 +157,7 @@ export function Hero() {
                 style={{ animationDelay: "2s" }}
               >
                 <div className="text-xl">🚀</div>
-              </div> */}
+              </div>
             </div>
           </div>
           {/* Learn More About Me Section - Highlighted Box */}
@@ -191,7 +189,11 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="pt-8 flex lg:justify-end" data-aos="fade-up" data-aos-delay="700">
+          <div
+            className="pt-8 flex lg:justify-end"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <div className="relative p-6 rounded-2xl bg-[#FFCA0B] max-w-[555px]">
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
@@ -202,14 +204,18 @@ export function Hero() {
                 </div>
 
                 <p className="text-lg text-black mb-6 text-center lg:text-left">
-                  With 12+ years in full-stack development, I’ve honed a
-                  diverse set of skills and experiences that drive impactful
-                  digital solutions. Explore the full journey and skillset
-                  below.
+                  With 12+ years in full-stack development, I’ve honed a diverse
+                  set of skills and experiences that drive impactful digital
+                  solutions. Explore the full journey and skillset below.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                  <a href="/skills" className="inline-flex items-center gap-2 text-black px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]">Explore My Skills <ArrowRight className="h-4 w-4" /></a>
+                  <a
+                    href="/skills"
+                    className="inline-flex items-center gap-2 text-black px-5 py-4 text-xl font-medium  rounded-md border-none !bg-[#ABF5FF]"
+                  >
+                    Explore My Skills <ArrowRight className="h-4 w-4" />
+                  </a>
                 </div>
               </div>
             </div>
