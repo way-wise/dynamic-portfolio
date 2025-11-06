@@ -122,7 +122,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="w-full sm:w-auto bg-blue-900!"
+                className="w-full sm:w-auto bg-blue-900! border-none! text-white! hover:bg-blue-800!"
               >
                 <a href="#contact">Get In Touch</a>
               </Button>
